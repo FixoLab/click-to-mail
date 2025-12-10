@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--====== Title ======-->
+    <title>Click to Mail - javascript mail plugin with email</title>
+    <!-- ========== Favicon Ico ========== -->
+    <link rel="icon" href="demo-demo-demo-assets/images/favicon.ico" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="demo-assets/css/bootstrap.min.css" />
+    <!--====== IcoFont css ======-->
+    <link rel="stylesheet" href="demo-assets/css/icofont.min.css" />
+    <!--====== Font awesome css ======-->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <!--====== Plugin css ======-->
+    <link rel="stylesheet" href="assets/css/ctm-main.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="demo-assets/css/style.css" />
+
+    <style>
+      #example_2,
+      #example_3,
+      #example_4,
+      #example_5,
+      #example_6,
+      #example_7,
+      #example_8,
+      #example_9 {
+        display: none;
+      }
+    </style>
+    <!--====== Custom css ======-->
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+  </head>
+
+  <body>
+    <!-- ========== Buttons section start ========== -->
+    <section id="buttons" class="buttons buttons__layouts ctm-demo-scroll">
+      <div class="container">
+          <!-- Buttons with image and info -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Buttons with image</h5>
+                <p>
+                  Buttons with your image, name and position mentioned. Also
+                  shows you active or not. Inactive button won't be clickable
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-bg ctm-btn-rounded ctmButtons mb-3 mb-md-0"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client1.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                ></a>
+              </button>
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-rounded ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-08:30", "monday":"00:00-08:30", "tuesday":"00:00-08:30", "wednesday":"01:00-08:30", "thursday":"00:00-08:30", "friday":"00:00-08:30", "saturday":"00:00-08:30" }'
+              >
+                <img src="demo-assets/images/client2.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Buttons with small border-reduce -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Small border reduce.</h5>
+                <p>
+                  All are same style and design as like the button with image,
+                  but with small border reduce this time.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-bg ctmButtons mb-3 mb-md-0"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client3.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                ></a>
+              </button>
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-08:30", "monday":"00:00-08:30", "tuesday":"00:00-08:30", "wednesday":"01:00-08:30", "thursday":"00:00-08:30", "friday":"00:00-08:30", "saturday":"00:00-08:30" }'
+              >
+                <img src="demo-assets/images/user.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Buttons without background -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Without background</h5>
+                <p>
+                  You may want button without background color also. And we
+                  already created one for you without background.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-number="0123456789"
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client2.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Button with icon -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Buttons with icon</h5>
+                <p>You can have icon instead of avatar.</p>
+                <p>Also with different border reduce.</p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 mailtoui ctm-btn-bg mailtoui mb-3 mb-md-0"
+              >
+                <i class="icofont-ui-call"></i>How can i help you?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 mailtoui ctm-btn-bg mailtoui ctm-btn-rounded"
+              >
+                <i class="icofont-ui-call"></i>How can i help you?
+              </a>
+            </div>
+          </div>
+          <!-- Button with icon and without background -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Buttons with icon & without background.</h5>
+                <p>
+                  Incase if you want a button without icon and without
+                  background, we already have it.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 mailtoui ctm-btn-rounded ctm-change-text"
+              >
+                <i class="icofont-ui-call"></i>How can i help you?
+              </a>
+            </div>
+          </div>
+          <!-- Button with hover effect -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Buttons with hover effect</h5>
+                <p>
+                  Buttons with hover effect is also here. add a class to buttons
+                  and any button will have this effect.
+                </p>
+              </div>
+            </div>
+            <div
+              class="d-md-flex justify-content-center align-items-center gap-4"
+            >
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-2 mailtoui ctm-btn-rounded ctm-btn-effect mb-3 mb-md-0"
+              >
+                <i class="icofont-ui-call"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-2 mailtoui ctm-btn-bg ctm-btn-effect"
+              >
+                <i class="icofont-ui-call"></i>How can I help?
+              </a>
+            </div>
+          </div>
+          <!-- Different size buttons -->
+          <div class="mb-5 pb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3 text-center">
+                <h5 class="mb-2">Sizable Buttons</h5>
+                <p>
+                  All buttons comes with three different sizes. Adding one class
+                  will make the difference.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center align-items-end gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 ctm-btn-bg mailtoui ctm-btn-sm mb-3 mb-md-0"
+              >
+                <i class="icofont-ui-call"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 ctm-btn-bg mailtoui mb-3 mb-md-0"
+              >
+                <i class="icofont-ui-call"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+                class="ctm-button-3 ctm-btn-bg mailtoui ctm-btn-lg"
+              >
+                <i class="icofont-ui-call"></i>How can I help?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Buttons section end ========== -->
+    <!--====== Mailtoui js ======-->
+    <script src="assets/js/mailtoui-min.js"></script>
+    <!--====== Moment js ======-->
+    <script src="assets/js/moment.min.js"></script>
+    <!--====== Moment js Timezone======-->
+    <script src="assets/js/moment-timezone-with-data.min.js"></script>
+    <!--====== ctm js ======-->
+    <script src="assets/js/ctm-main.js"></script>
+
+
+  </body>
+</html>

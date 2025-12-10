@@ -1,0 +1,364 @@
+.layouts-page {
+  height: 700px;
+  overflow: hidden;
+  .layouts__title {
+    padding: 15px;
+  }
+}
+.layouts-box {
+  right: 30px !important;
+}
+.layouts {
+  &__area {
+    padding: 20px;
+    background-color: $color-tertiary;
+    @include respond(tablet) {
+      padding: 10px;
+    }
+    @include respond(phone) {
+      padding: 10px 0;
+    }
+  }
+  &__wrapper {
+    text-align: center;
+    @include respond(phone) {
+      height: 660px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      padding-right: 0px;
+      scrollbar-width: thin;
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: var(--color-message);
+        margin-block: 0.5em;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-primary);
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+  &__sidebar {
+    height: 595px;
+  }
+  &__popup {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include respond(phone) {
+      padding: 0;
+      height: 0;
+    }
+    &__wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: width 1s;
+      border: 15px solid $color-dark-primary;
+      border-radius: 20px;
+      @include respond(laptop) {
+        border: 10px solid $color-dark-primary;
+      }
+      @include respond(phone) {
+        border: 0px solid $color-dark-primary;
+      }
+      .ctm,
+      .ctm-multi {
+        position: absolute;
+        @include respond(phone) {
+          right: 0 !important;
+        }
+      }
+    }
+    &.layouts__popup-width {
+      padding: 20px;
+      @include respond(phone) {
+        padding: 0;
+      }
+      .layouts__popup__wrapper {
+        width: 375px;
+        box-shadow: 2px 0px 15px 5px $color-shadow;
+        background-color: $color-light;
+        border-radius: 10px;
+        transition: width 1s;
+      }
+    }
+  }
+  #change_effect_popup {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    @include respond(tablet) {
+      width: 100%;
+    }
+  }
+  .usage_example {
+    .layouts__design {
+      border: 5px solid $color-tertiary;
+      transition: all 0.3s;
+      cursor: pointer;
+      img {
+        width: 100%;
+        object-fit: content;
+      }
+      .layouts__title {
+        text-align: center;
+        background-color: $color-primary;
+        padding: 15px;
+        color: $color-light;
+        transition: 0.5s;
+        font-size: 14px;
+        @include respond(big-desktop) {
+          font-size: 12px;
+          padding: 10px;
+        }
+      }
+      &:hover {
+        border: 5px solid $color-primary;
+        .layouts__title {
+          text-align: center;
+          background-color: $color-secondary;
+          padding: 15px;
+          color: $color-light;
+        }
+      }
+    }
+    &.selected {
+      .layouts__design {
+        border: 5px solid $color-primary;
+        .layouts__title {
+          text-align: center;
+          background-color: $color-secondary;
+          padding: 15px;
+          color: $color-light;
+          font-size: 14px;
+          @include respond(big-desktop) {
+            font-size: 12px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+  &__sidebar {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__menu {
+    display: none;
+    @include respond(phone) {
+      display: block;
+      position: relative;
+    }
+    &-btn {
+      position: absolute;
+      z-index: 9990;
+      left: 15px;
+      width: 35px;
+      background-color: $color-light;
+      padding: 5px;
+      border-radius: 3px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__area {
+      background-color: $color-light;
+      padding: 15px;
+      z-index: 9999;
+      position: relative;
+      display: block;
+      -webkit-animation: fadeIn 0.6s;
+      animation: fadeIn 0.6s;
+      .usage_example {
+        .layouts__menu__design {
+          border: 5px solid $color-tertiary;
+          transition: all 0.3s;
+          cursor: pointer;
+          img {
+            width: 100%;
+            object-fit: content;
+          }
+          .layouts__menu__title {
+            text-align: center;
+            background-color: $color-primary;
+            padding: 15px;
+            color: $color-light;
+            transition: all 0.5s;
+            font-size: 14px;
+            @include respond(big-desktop) {
+              font-size: 12px;
+              padding: 10px;
+            }
+          }
+          &:hover {
+            border: 5px solid $color-primary;
+            .layouts__menu__title {
+              background-color: $color-secondary;
+              color: $color-light;
+            }
+          }
+        }
+        &.selected {
+          .layouts__menu__design {
+            border: 5px solid $color-primary;
+            .layouts__menu__title {
+              text-align: center;
+              background-color: $color-secondary;
+              padding: 15px;
+              color: $color-light;
+              font-size: 14px;
+              @include respond(big-desktop) {
+                font-size: 12px;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__design {
+      border: 5px solid $color-tertiary;
+      transition: all 0.3s;
+      cursor: pointer;
+      img {
+        width: 100%;
+        object-fit: content;
+      }
+      &__title {
+        text-align: center;
+        background-color: $color-primary;
+        padding: 15px;
+        color: $color-light;
+        transition: 0.5s;
+        font-size: 14px;
+        @include respond(big-desktop) {
+          font-size: 12px;
+          padding: 10px;
+        }
+      }
+      &:hover {
+        border: 5px solid $color-primary;
+        .layouts__title {
+          text-align: center;
+          background-color: $color-secondary;
+          padding: 15px;
+          color: $color-light;
+          @include respond(big-desktop) {
+            font-size: 12px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.night-mode {
+  .layouts,
+  .layouts__area {
+    background-color: $color-dark-primary;
+  }
+  .layouts-page {
+    .layouts,
+    .layouts__area {
+      background-color: $color-dark-secondary;
+    }
+  }
+}
+
+.night-mode {
+  .buttons {
+    background-color: $color-dark-secondary;
+  }
+}
+.layouts__popup {
+  padding: 10px 0;
+  .mobile-view {
+    z-index: 999;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  .desktop-view {
+    z-index: 990;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &.layouts__popup-width {
+    .mobile-view {
+      z-index: 990;
+    }
+    .desktop-view {
+      z-index: 999;
+    }
+    .ctm {
+      right: 15px;
+      bottom: 15px;
+      &.ctm-left {
+        right: 15px;
+        bottom: 15px;
+      }
+      &__popup {
+        width: 290px;
+        &--header {
+          padding: 15px;
+        }
+        &--content {
+          padding: 15px;
+        }
+      }
+    }
+    .ctm-multi {
+      right: 15px;
+      bottom: 15px;
+      &.ctm-multi-left {
+        right: 15px;
+        bottom: 15px;
+      }
+      .ctm-left {
+        right: 15px;
+        bottom: 15px;
+      }
+      &__popup {
+        width: 280px;
+        &--header {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+.mobile-view,
+.desktop-view {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 35px;
+  background-color: $color-tertiary;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.night-mode {
+  .layouts__popup__wrapper {
+    border-color: $color-light;
+  }
+}

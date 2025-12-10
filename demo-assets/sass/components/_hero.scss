@@ -1,0 +1,114 @@
+/////  HERO VERSION 05  /////
+.hero5 {
+  overflow: hidden;
+  background-color: $color-tertiary;
+  z-index: -1;
+  padding: 170px 0px 100px 0;
+  @include respond(phone) {
+    padding: 100px 0px 70px 0px;
+  }
+  &__content {
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+
+    img {
+      border-radius: 5px;
+      box-shadow: 2px 0px 15px 5px $color-shadow;
+      background: $color-light;
+      padding: 10px;
+      border: 1px solid $color-shadow;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    &__input {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background-color: $color-light;
+      padding: 5px;
+      border-radius: 50px;
+      border: 1px solid $color-dark-secondary;
+      width: 550px;
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 30px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .btn__primary {
+        width: 300px;
+        border-radius: 50px;
+        @include respond(big-desktop) {
+          width: 250px;
+          padding: 10px 0px;
+        }
+      }
+      @include respond(big-desktop) {
+        width: 100%;
+      }
+      @include respond(mini) {
+        display: block;
+        background-color: inherit;
+        padding: 0px;
+        border-radius: 0px;
+        border: none;
+        input {
+          margin-bottom: 10px;
+          border: 1px solid $color-dark-secondary;
+        }
+        .btn__primary {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .circle {
+    position: absolute;
+  }
+  .circle-1 {
+    top: 0;
+    animation: moveCircles2 5s linear infinite alternate;
+    left: -20px;
+    z-index: -1;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  .circle-2 {
+    right: 0;
+    left: inherit;
+    bottom: 50px;
+    animation: moveCircles2 5s linear infinite alternate;
+    z-index: -1;
+  }
+}
+
+/////  DARK VERSION  /////
+.night-mode {
+  .hero5 {
+    background-color: $color-dark-secondary;
+    .btn__primary {
+      &:hover {
+        span {
+          color: $color-light;
+        }
+      }
+      &::before {
+        background-color: $color-secondary;
+      }
+    }
+  }
+}

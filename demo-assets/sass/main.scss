@@ -1,0 +1,20 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/animation';
+
+@import './base/typography';
+@import './base/base';
+
+@import './components/header';
+@import './components/hero';
+@import './components/cta';
+@import './components/overview';
+@import './components/faq';
+@import './components/pricing';
+@import './components/testimonial';
+@import './components/footer';
+@import './components/popup-layout';
+
+@import './pages/project-details';
+@import './pages/all-blog';
+@import './pages/blog-details';

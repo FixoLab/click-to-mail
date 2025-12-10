@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--====== Title ======-->
+    <title>Click to Mail - javascript mail plugin with email</title>
+    <!-- ========== Favicon Ico ========== -->
+    <link rel="icon" href="demo-assets/images/favicon.ico" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="demo-assets/css/bootstrap.min.css" />
+    <!--====== IcoFont css ======-->
+    <link rel="stylesheet" href="demo-assets/css/icofont.min.css" />
+    <!-- ========== Fontawesome icon ========== -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <!--====== Odometer css ======-->
+    <link rel="stylesheet" href="demo-assets/css/odometer-theme-default.css" />
+    <!--====== GLightbox css ======-->
+    <link rel="stylesheet" href="demo-assets/css/glightbox.css" />
+    <!--====== Swiper css ======-->
+    <link rel="stylesheet" href="demo-assets/css/swiper.min.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/ctm-main.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="demo-assets/css/style.css" />
+
+    <style>
+      #example_2,
+      #example_3,
+      #example_4,
+      #example_5,
+      #example_6,
+      #example_7,
+      #example_8,
+      #example_9 {
+        display: none;
+      }
+    </style>
+    <!--====== Custom css ======-->
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+  </head>
+
+  <body>
+    <!-- ========== Preloader start ========== -->
+    <div id="preLoader"></div>
+    <!-- ========== Preloader End ========== -->
+    <!-- ========== Header start ========== -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <h1 class="m-0">CTM.</h1>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul id="onepage-nav" class="navbar-nav menu ms-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#demoLayouts">Layouts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#buttons">Buttons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#faq">FAQ</a>
+                </li>
+
+                <li class="nav-item">
+                  <div class="switch-box">
+                    <label id="switch" class="switch">
+                      <input
+                        type="checkbox"
+                        onchange="toggleTheme()"
+                        id="slider"
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ========== Header end ========== -->
+    <!-- ========== Hero section start ========== -->
+    <section class="hero5 hero-padding bg-one" id="hero">
+      <div class="container">
+        <div class="row gx-xl-5 align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center">
+            <div class="hero5__content">
+              <h1 class="hero2__title display-5 mb-4 text-capitalize">
+                Click to mail will allow your Users to connect you With Mail.
+              </h1>
+              <p class="mb-4 fs-5">
+                This will help users & customers to contact with the site owner
+                and to ask for support with one click using their mail.
+              </p>
+              <a href="#demoLayouts" class="btn__primary smooth">
+                <span>See Demos <i class="icofont-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row hero5__image">
+              <div class="col-10">
+                <div class="hero5-slide">
+                  <div class="swiper-wrapper pb-2">
+                    <!-- slider item start -->
+                    <div class="swiper-slide p-5px-lr">
+                      <img
+                        class="img-fluid"
+                        src="demo-assets/images/layout-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <!-- slider item end -->
+                    <!-- slider item start -->
+                    <div class="swiper-slide p-5px-lr">
+                      <img
+                        class="img-fluid"
+                        src="demo-assets/images/layout-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <!-- slider item end -->
+                    <!-- slider item start -->
+                    <div class="swiper-slide p-5px-lr">
+                      <img
+                        class="img-fluid"
+                        src="demo-assets/images/layout-3.png"
+                        alt="image"
+                      />
+                    </div>
+                    <!-- slider item end -->
+                    <!-- slider item start -->
+                    <div class="swiper-slide p-5px-lr">
+                      <img
+                        class="img-fluid"
+                        src="demo-assets/images/layout-4.png"
+                        alt="image"
+                      />
+                    </div>
+                    <!-- slider item end -->
+                    <!-- slider item start -->
+                    <div class="swiper-slide p-5px-lr">
+                      <img
+                        class="img-fluid"
+                        src="demo-assets/images/layout-5.png"
+                        alt="image"
+                      />
+                    </div>
+                    <!-- slider item end -->
+                  </div>
+                  <div class="swiper-pagination mt-3"></div>
+                </div>
+              </div>
+              <span class="circle circle-1"></span>
+              <span class="circle circle-2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Hero section end ========== -->
+
+    <!-- ========== Popup layout section start ========== -->
+    <section id="demoLayouts" class="section-padding layouts">
+      <div class="container">
+        <div class="section-title-center">
+          <div class="row gx-xl-5">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <p class="badge-text">Different popup layouts</p>
+              <h3>Popup Layouts with different animation</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <select id="change_effect">
+              <option data-animation="#animation_1" value="1" selected="">
+                Fade Right
+              </option>
+              <option data-animation="#animation_2" value="2">Fade Down</option>
+              <option data-animation="#animation_4" value="4">
+                Fade In Scale
+              </option>
+              <option data-animation="#animation_5" value="5">Rotation</option>
+              <option data-animation="#animation_6" value="6">
+                Slide Fall
+              </option>
+              <option data-animation="#animation_7" value="7">
+                Slide Down
+              </option>
+              <option data-animation="#animation_3" value="3">Ease Down</option>
+              <option data-animation="#animation_8" value="8">
+                Rotate Left
+              </option>
+              <option data-animation="#animation_9" value="9">
+                Flip Horizontal
+              </option>
+              <option data-animation="#animation_10" value="10">
+                Flip Vertical
+              </option>
+              <option data-animation="#animation_11" value="11">Flip Up</option>
+              <option data-animation="#animation_12" value="12">
+                Super Scaled
+              </option>
+              <option data-animation="#animation_13" value="13">
+                Slide Up
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="usage_examples mt-4">
+          <div class="row" id="usage_examples">
+            <div
+              class="col-md-4 mb-4 usage_example selected"
+              data-show="#example_1"
+            >
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/with-input-text.png"
+                  alt=""
+                />
+                <div class="layouts__title">Form Layout</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_2">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-header-left.png"
+                  alt=""
+                />
+                <div class="layouts__title">Single Header Left</div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_3">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-list.png"
+                  alt=""
+                />
+                <div class="layouts__title">List Layout</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_4">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-grid.png"
+                  alt=""
+                />
+                <div class="layouts__title">Grid Layout</div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_5">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-offline.png"
+                  alt=""
+                />
+                <div class="layouts__title">Offline Position</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_6">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-left.png"
+                  alt=""
+                />
+                <div class="layouts__title">Left Layout</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_7">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-dark.png"
+                  alt=""
+                />
+                <div class="layouts__title">Dark Color</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_8">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/dark-color.png"
+                  alt=""
+                />
+                <div class="layouts__title">Dark Color</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 usage_example" data-show="#example_9">
+              <div class="layouts__design">
+                <img
+                  class="img-fliud"
+                  src="demo-assets/images/layout-button.png"
+                  alt=""
+                />
+                <div class="layouts__title">Different Button</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Popup layout section end ========== -->
+    <!-- ========== Buttons section start ========== -->
+    <section id="buttons" class="section-padding bg-one buttons">
+      <div class="pt-5">
+        <div class="container">
+          <div class="section-title-center">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-8 mx-auto">
+                <p class="badge-text">Buttons</p>
+                <h3>
+                  Buttons with different styles
+                  <b><span id="currentDate"></span> </b>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Buttons with image and info -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Buttons with image</h5>
+                <p>
+                  Buttons with your image, name and position mentioned. Also
+                  shows you active or not. Inactive button won't be clickable
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-bg ctm-btn-rounded ctmButtons mb-3 mb-md-0"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client1.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                ></a>
+              </button>
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-rounded ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-08:30", "monday":"00:00-08:30", "tuesday":"00:00-08:30", "wednesday":"01:00-08:30", "thursday":"00:00-08:30", "friday":"00:00-08:30", "saturday":"00:00-08:30" }'
+              >
+                <img src="demo-assets/images/client2.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Buttons with small border-reduce -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Small border reduce.</h5>
+                <p>
+                  All are same style and design as like the button with image,
+                  but with small border reduce this time.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctm-btn-bg ctmButtons mb-3 mb-md-0"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client3.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                ></a>
+              </button>
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-08:30", "monday":"00:00-08:30", "tuesday":"00:00-08:30", "wednesday":"01:00-08:30", "thursday":"00:00-08:30", "friday":"00:00-08:30", "saturday":"00:00-08:30" }'
+              >
+                <img src="demo-assets/images/user.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Buttons without background -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Without background</h5>
+                <p>
+                  You may want button without background color also. And we
+                  already created one for you without background.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <button
+                data-timezone="America/Los_Angeles"
+                class="ctm-button-4 ctmButtons"
+                data-btnavailablety='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:00-23:59", "saturday":"00:00-23:59" }'
+              >
+                <img src="demo-assets/images/client2.webp" alt="" />
+                <div class="info-wrapper">
+                  <p class="info">Robert / Sales Support</p>
+                  <p class="title">Need Help? Send Mail</p>
+                  <p class="online">I'm available</p>
+                  <p class="offline">I'm not available</p>
+                </div>
+                <a
+                  class="mailtoui"
+                  href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- Button with icon -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Buttons with icon</h5>
+                <p>You can have icon instead of avatar.</p>
+                <p>Also with different border reduce.</p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-bg mb-3 mb-md-0"
+              >
+                <i class="fa-regular fa-envelope"></i>How can i help you?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-bg ctm-btn-rounded"
+              >
+                <i class="fa-regular fa-envelope"></i>How can i help you?
+              </a>
+            </div>
+          </div>
+          <!-- Button with icon and without background -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Buttons with icon & without background.</h5>
+                <p>
+                  Incase if you want a button without icon and without
+                  background, we already have it.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-rounded ctm-change-text"
+              >
+                <i class="fa-regular fa-envelope"></i>How can i help you?
+              </a>
+            </div>
+          </div>
+          <!-- Button with hover effect -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Buttons with hover effect</h5>
+                <p>
+                  Buttons with hover effect is also here. add a class to buttons
+                  and any button will have this effect.
+                </p>
+              </div>
+            </div>
+            <div
+              class="d-md-flex justify-content-center align-items-center gap-4"
+            >
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-2 mailtoui ctm-btn-rounded ctm-btn-effect mb-3 mb-md-0"
+              >
+                <i class="fa-regular fa-envelope"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-2 mailtoui ctm-btn-bg ctm-btn-effect"
+              >
+                <i class="fa-regular fa-envelope"></i>How can I help?
+              </a>
+            </div>
+          </div>
+          <!-- Different size buttons -->
+          <div class="mb-5">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-6 mx-auto mb-3">
+                <h5 class="mb-2">Sizable Buttons</h5>
+                <p>
+                  All buttons comes with three different sizes. Adding one class
+                  will make the difference.
+                </p>
+              </div>
+            </div>
+            <div class="d-md-flex justify-content-center align-items-end gap-4">
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-bg ctm-btn-sm mb-3 mb-md-0"
+              >
+                <i class="fa-regular fa-envelope"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-bg mb-3 mb-md-0"
+              >
+                <i class="fa-regular fa-envelope"></i>How can I help?
+              </a>
+              <a
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+                class="ctm-button-3 mailtoui ctm-btn-bg ctm-btn-lg"
+              >
+                <i class="fa-regular fa-envelope"></i>How can I help?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Buttons section end ========== -->
+
+    <!-- ========== Features section start ========== -->
+    <section id="overview" class="overview section-padding">
+      <div class="container">
+        <div class="section-title-center">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <p class="badge-text">Overview</p>
+              <h3>Software overview</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>01</h2>
+                <h3>Single chat Bubble</h3>
+                <p>
+                  A fixed chat bubble with fixed position on display. On click
+                  which shows users a option to Send mail with you via mail also
+                  your details and active status.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>02</h2>
+                <h3>Multi user options</h3>
+                <p>
+                  You can add plenty different person as option for users to
+                  Send mail and ask help. Also can set availability time for
+                  each person. There are options to search by name and filtering
+                  only the search name.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>03</h2>
+                <h3>Multi buttons</h3>
+                <p>
+                  You can set more than one quick chat button on your site with
+                  different numbers and different availability time. There are
+                  many designs available for buttons also. All buttons has
+                  offline / online options.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>04</h2>
+                <h3>Time availability</h3>
+                <p>
+                  Specify the time when you are or your workers are available to
+                  receive messages from users during the weekend. Unavailable
+                  person will be shown as offline. And User can't call you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>05</h2>
+                <h3>Time zone</h3>
+                <p>
+                  Set your timezone so that user see your offline & online time
+                  schedule according to your time. Without this they'll see it
+                  according to their machine time. Which isn't ideal. Here is
+                  the link where you can find your timezone name.
+                  <a href="https://momentjs.com/timezone/">Timezone</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>06</h2>
+                <h3>Popup animation</h3>
+                <p>
+                  There are lots of animation options available to add in popup.
+                  See demos here and add your preferable one. You can add any
+                  animation shown here with just one class change.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-md-0">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>07</h2>
+                <h3>Popup layouts</h3>
+                <p>
+                  We have many layouts ready for you to use. All of them with
+                  different options, different functionality. Choose one which
+                  fit your websites.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="overview__content translateEffect2 h-100">
+              <div class="overview__content--title">
+                <h2>08</h2>
+                <h3>Easy customization</h3>
+                <p>
+                  Its very easy and understandable. changing one class will
+                  change a lot of layouts and animations. So Its quite easy to
+                  edit. to connect you just have to put number at data
+                  attribute. No worry at all.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Features section end ========== -->
+    <!-- ========== Quick Overview section start ========== -->
+    <section class="section-padding quick-overview bg-one">
+      <div class="container">
+        <div class="section-title-center">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <p class="badge-text">Overview</p>
+              <h3>Quick software overview</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row overview__wrapper">
+          <div class="col-12">
+            <div class="overview-slide">
+              <div class="swiper-wrapper pb-2">
+                <!-- overview item start -->
+                <div class="swiper-slide p-5px-lr">
+                  <a
+                    href="demo-assets/images/layout-1.png"
+                    class="glightbox2"
+                    data-glightbox=" description: .custom-desc1; descPosition: right;"
+                  >
+                    <img
+                      class="img-fluid overview__wrapper__image"
+                      src="demo-assets/images/layout-1.png"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="glightbox-desc custom-desc1">
+                    <h3 class="mb-4 text-center">Installation</h3>
+                    <p>
+                      Software articles should describe a tool likely to be of
+                      broad utility that represents a significant advance over
+                      previously published software (usually demonstrated by
+                      direct comparison with available related software).
+                    </p>
+                    <p>
+                      The software application/tool described in the manuscript
+                      must be available for testing by reviewers in a way that
+                      preserves their anonymity. If published, software
+                      applications/tools must be freely available to any
+                      researcher wishing to use them for non-commercial
+                      purposes, without restrictions such as the need for a
+                      material transfer agreement. Because web-links frequently
+                      become broken, BMC strongly recommends that all software
+                      applications/tools are included with the submitted
+                      manuscript as additional files to ensure that the software
+                      will continue to be available.
+                    </p>
+                    <p>
+                      BMC recommends, but does not require, that the source code
+                      of the software should be made available under a suitable
+                      open-source license that will entitle other researchers to
+                      further develop and extend the software if they wish to do
+                      so. Typically, an archive of the source code of the
+                      current version of the software should be included with
+                      the submitted manuscript as a supplementary file.
+                    </p>
+                  </div>
+                </div>
+                <!-- overview item end -->
+                <!-- overview item start -->
+                <div class="swiper-slide p-5px-lr">
+                  <a
+                    href="demo-assets/images/layout-2.png"
+                    class="glightbox2"
+                    data-glightbox=" description: .custom-desc2; descPosition: right;"
+                  >
+                    <img
+                      class="img-fluid overview__wrapper__image"
+                      src="demo-assets/images/layout-2.png"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="glightbox-desc custom-desc2">
+                    <h3 class="mb-4 text-center">Setup app</h3>
+                    <p>
+                      Software articles should describe a tool likely to be of
+                      broad utility that represents a significant advance over
+                      previously published software (usually demonstrated by
+                      direct comparison with available related software).
+                    </p>
+                    <p>
+                      The software application/tool described in the manuscript
+                      must be available for testing by reviewers in a way that
+                      preserves their anonymity. If published, software
+                      applications/tools must be freely available to any
+                      researcher wishing to use them for non-commercial
+                      purposes, without restrictions such as the need for a
+                      material transfer agreement. Because web-links frequently
+                      become broken, BMC strongly recommends that all software
+                      applications/tools are included with the submitted
+                      manuscript as additional files to ensure that the software
+                      will continue to be available.
+                    </p>
+                    <p>
+                      BMC recommends, but does not require, that the source code
+                      of the software should be made available under a suitable
+                      open-source license that will entitle other researchers to
+                      further develop and extend the software if they wish to do
+                      so. Typically, an archive of the source code of the
+                      current version of the software should be included with
+                      the submitted manuscript as a supplementary file.
+                    </p>
+                  </div>
+                </div>
+                <!-- overview item end -->
+                <!-- overview item start -->
+                <div class="swiper-slide p-5px-lr">
+                  <a
+                    href="demo-assets/images/layout-3.png"
+                    class="glightbox2"
+                    data-glightbox=" description: .custom-desc3; descPosition: right;"
+                  >
+                    <img
+                      class="img-fluid overview__wrapper__image"
+                      src="demo-assets/images/layout-3.png"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="glightbox-desc custom-desc3">
+                    <h3 class="mb-4 text-center">Monetization</h3>
+                    <p>
+                      Software articles should describe a tool likely to be of
+                      broad utility that represents a significant advance over
+                      previously published software (usually demonstrated by
+                      direct comparison with available related software).
+                    </p>
+                    <p>
+                      The software application/tool described in the manuscript
+                      must be available for testing by reviewers in a way that
+                      preserves their anonymity. If published, software
+                      applications/tools must be freely available to any
+                      researcher wishing to use them for non-commercial
+                      purposes, without restrictions such as the need for a
+                      material transfer agreement. Because web-links frequently
+                      become broken, BMC strongly recommends that all software
+                      applications/tools are included with the submitted
+                      manuscript as additional files to ensure that the software
+                      will continue to be available.
+                    </p>
+                    <p>
+                      BMC recommends, but does not require, that the source code
+                      of the software should be made available under a suitable
+                      open-source license that will entitle other researchers to
+                      further develop and extend the software if they wish to do
+                      so. Typically, an archive of the source code of the
+                      current version of the software should be included with
+                      the submitted manuscript as a supplementary file.
+                    </p>
+                  </div>
+                </div>
+                <!-- overview item end -->
+                <!-- overview item start -->
+                <div class="swiper-slide p-5px-lr">
+                  <a
+                    href="demo-assets/images/layout-4.png"
+                    class="glightbox2"
+                    data-glightbox=" description: .custom-desc4; descPosition: right;"
+                  >
+                    <img
+                      class="img-fluid overview__wrapper__image"
+                      src="demo-assets/images/layout-4.png"
+                      alt="image"
+                    />
+                  </a>
+                  <div class="glightbox-desc custom-desc4">
+                    <h3 class="mb-4 text-center">The Beginning</h3>
+                    <p>
+                      Software articles should describe a tool likely to be of
+                      broad utility that represents a significant advance over
+                      previously published software (usually demonstrated by
+                      direct comparison with available related software).
+                    </p>
+                    <p>
+                      The software application/tool described in the manuscript
+                      must be available for testing by reviewers in a way that
+                      preserves their anonymity. If published, software
+                      applications/tools must be freely available to any
+                      researcher wishing to use them for non-commercial
+                      purposes, without restrictions such as the need for a
+                      material transfer agreement. Because web-links frequently
+                      become broken, BMC strongly recommends that all software
+                      applications/tools are included with the submitted
+                      manuscript as additional files to ensure that the software
+                      will continue to be available.
+                    </p>
+                    <p>
+                      BMC recommends, but does not require, that the source code
+                      of the software should be made available under a suitable
+                      open-source license that will entitle other researchers to
+                      further develop and extend the software if they wish to do
+                      so. Typically, an archive of the source code of the
+                      current version of the software should be included with
+                      the submitted manuscript as a supplementary file.
+                    </p>
+                  </div>
+                </div>
+                <!-- overview item end -->
+              </div>
+              <div class="swiper-pagination mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Quick Overview section end ========== -->
+
+    <!-- ========== Cta start ========== -->
+    <section
+      class="section-padding cta"
+      style="background-image: url(demo-assets/images/software-cta.webp)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="cta__content">
+              <h2 class="display-4 mb-3">Trusted and Supported by many uers</h2>
+              <p class="fs-5 mb-5">
+                Preferring to go on writing binges, Strayed, who is the mother
+                of two small children, often ensconces herself in a hotel room
+                to burrow into her work for a few days or weeks.
+              </p>
+              <div class="position-relative">
+                <a
+                  href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                  class="glightbox3 video-btn"
+                >
+                  <i class="icofont-ui-play"></i
+                ></a>
+                <div class="promo-video">
+                  <div class="waves-block">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    <div class="waves wave-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Cta end ========== -->
+    <!-- ========== Faq section start ========== -->
+    <section id="faq" class="section-padding faq">
+      <div class="container">
+        <div class="row gx-xl-5">
+          <div class="col-lg-6">
+            <div class="section-title-left">
+              <p class="badge-text">Frequently asked questions</p>
+              <h3 class="mb-4">
+                Click to mail is here to make your work easy.
+              </h3>
+              <p class="mb-4">
+                Click to mail is very easy to use and its code very simple and
+                understandable to anyone, even to any non-technical person also.
+                Using ctm will help to connect with your users and customers
+                with just one click. They can ask you, give you feedback with
+                just one click via Mail. That's how your business will grow
+                fast.
+              </p>
+              <a href="#pricing" class="btn__primary smooth">
+                <span>Buy now</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div
+              class="accordion accordion-flush faqs-accordion"
+              id="accordionFlushExample"
+            >
+              <!-- accordion start -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What is Click to mail?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <p class="accordion-body text-secondary">
+                    Click to mail is the fastest tool for your clients to reach
+                    you and get their questions resolved via their Mail. Using
+                    it, your clients can stay connected with you.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion end -->
+              <!-- accordion start -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Benefits of using it in my website?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <p class="accordion-body text-secondary">
+                    You can use the ctm on your website to help your audience
+                    get their questions answered, to make order process simple,
+                    to support them 24/7. Simply add your support team members
+                    or your Mail there and wait for users to start the
+                    conversation!
+                  </p>
+                </div>
+              </div>
+              <!-- accordion end -->
+              <!-- accordion start -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Can I set active and offline time for myself?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <p class="accordion-body text-secondary">
+                    YES. You can set your availability time during the weekend
+                    for you and your team members. Who isn't active according to
+                    their availability time won't be clickable to Send mail. See
+                    demos and read documentation for more.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion end -->
+              <!-- accordion start -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    How do i fix timezone issue?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <p class="accordion-body text-secondary">
+                    You can set your timezone so that user see your availability
+                    time according to your timezone instead of their computer
+                    timezone. This is very useful to connect your clients from
+                    worldwide.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion end -->
+
+              <!-- accordion start -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    How many support member's Mail I can add?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <p class="accordion-body text-secondary">
+                    You can add as many support team members as you want. That
+                    won't be a problem at all. The size of layout won't change.
+                    It will bring vertical scroll bar and a search field to
+                    filter members by name on search.
+                  </p>
+                </div>
+              </div>
+              <!-- accordion end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Faq section end ========== -->
+
+    <!-- ========== Pricing section start ========== -->
+    <section id="pricing" class="pricing section-padding bg-one">
+      <div class="container">
+        <div class="section-title-center">
+          <div class="row gx-xl-5">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <p class="badge-text">Choose your plan</p>
+              <h3>Flexible pricing plan</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 col-lg-4 pb-4 mb-5 mb-lg-0">
+            <div class="pricing__item translateEffect1">
+              <span class="pricing__item__tag">bast selling</span>
+              <div class="pricing__item__icon">
+                <i class="icofont-badge"></i>
+              </div>
+              <h2 class="fs-1 mt-2">$14.00</h2>
+              <p class="pb-3">Single Website</p>
+              <hr />
+              <div class="pricing__item__list">
+                <ul class="pt-3">
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Single chat support</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Multiple accounts chat support</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Different chat buttons</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Availability time</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Set timezone</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Let your audience you’re offline</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Chat animations</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Device specific view</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Free support & one-time purchase</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Easy to customize</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Well documentation</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Allowed to use this only for single website</p>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://1.envato.market/KeQMGy"
+                target="_blank"
+                class="btn__primary"
+              >
+                <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 pb-4">
+            <div class="pricing__item translateEffect1">
+              <div class="pricing__item__icon">
+                <i class="icofont-diamond"></i>
+              </div>
+              <h2 class="fs-1 mt-2">$40.00</h2>
+              <p class="pb-3">Multiple Websites</p>
+              <hr />
+              <div class="pricing__item__list">
+                <ul class="pt-3">
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Single chat support</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Multiple accounts chat support</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Different chat buttons</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Availability time</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Set timezone</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Let your audience you’re offline</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Chat animations</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Device specific view</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Free support & one-time purchase</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Easy to customize</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Well documentation</p>
+                  </li>
+                  <li>
+                    <div class="pricing__item__list--ico">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>You are free to use in unlimited websites</p>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://1.envato.market/KeQMGy"
+                target="_blank"
+                class="btn__primary"
+              >
+                <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Pricing section end ========== -->
+    <!-- ========== Testimonial section start ========== -->
+    <section id="reviews" class="testimonial3 section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img
+              class="img-fluid"
+              src="demo-assets/images/testimonial.webp"
+              alt="image"
+            />
+          </div>
+          <div class="col-md-6 offset-md-1 testimonial3__content">
+            <div class="section-title-left">
+              <p class="badge-text">They say</p>
+              <h3>testimonial</h3>
+            </div>
+
+            <div class="swiper testimonialSlider">
+              <div class="swiper-wrapper">
+                <!-- Hero Slide 01 start -->
+                <div class="swiper-slide testimonial3__slide">
+                  <div class="testimonial3__slide__content">
+                    <ul>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                    </ul>
+                    <p>
+                      Very well product, great job. Nice and clean code. Good
+                      Luck With Sale.
+                    </p>
+                    <div class="user-info">
+                      <div class="user-info__image">
+                        <img
+                          src="demo-assets/images/client2.webp"
+                          alt="Image"
+                        />
+                      </div>
+                      <div class="user-info__content">
+                        <h4>Sachin Diwar</h4>
+                        <p>CEO/Founder</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Hero Slide 01 end -->
+                <!-- Hero Slide 02 start -->
+                <div class="swiper-slide testimonial3__slide">
+                  <div class="testimonial3__slide__content">
+                    <ul>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                    </ul>
+                    <p>
+                      Hello, Congratulations for your new template, Great
+                      design, cool features and we wish you to have lot of
+                      sales.
+                    </p>
+                    <div class="user-info">
+                      <div class="user-info__image">
+                        <img
+                          src="demo-assets/images/client3.webp"
+                          alt="Image"
+                        />
+                      </div>
+                      <div class="user-info__content">
+                        <h4>payothemes</h4>
+                        <p>UI/UX designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Hero Slide 02 end -->
+                <!-- Hero Slide 03 start -->
+                <div class="swiper-slide testimonial3__slide">
+                  <div class="testimonial3__slide__content">
+                    <ul>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                      <li><i class="icofont-star"></i></li>
+                    </ul>
+                    <p>
+                      Congratulations with the product. Very clean code and easy
+                      to understand. I purchased it and I liked it very much.
+                    </p>
+                    <div class="user-info">
+                      <div class="user-info__image">
+                        <img
+                          src="demo-assets/images/client4.webp"
+                          alt="Image"
+                        />
+                      </div>
+                      <div class="user-info__content">
+                        <h4>Maria Rammy</h4>
+                        <p>Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Hero Slide 03 end -->
+              </div>
+              <div class="swiper-button-next slid-next"></div>
+              <div class="swiper-button-prev slid-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Testimonial section end ========== -->
+    <!-- ========== CTA section start ========== -->
+    <section id="cta" class="ctav2 bg-one">
+      <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col-xl-7 col-lg-6 ctav2__images">
+            <div
+              class="ctav2__video"
+              style="
+                background-image: url(demo-assets/images/it-solution-cta.webp);
+              "
+            >
+              <a
+                href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                class="glightbox3 video-btn"
+              >
+                <i class="icofont-ui-play"></i
+              ></a>
+
+              <div class="waves-block">
+                <div class="waves wave-1"></div>
+                <div class="waves wave-2"></div>
+                <div class="waves wave-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="ctav2__content">
+              <div class="section-title-left">
+                <h3 class="mb-4">Try our other themes and plugin.</h3>
+                <p>
+                  We are a small team completely focused on HTML templates,
+                  WordPress themes and Javascript plugin. We write useful and
+                  beautiful WordPress and Javascript themes, plugins, and HTML
+                  templates all of which are written with care and commitment,
+                  and we are dedicated users of all our items ourselves.
+                </p>
+              </div>
+
+              <div class="ctav2__content--counter mb-3 mb-md-5">
+                <div class="ctav2__content--counter--single">
+                  <h3><span class="odometer" data-count="30"></span>+</h3>
+                  <p>Projects</p>
+                </div>
+                <div class="ctav2__content--counter--single">
+                  <h3><span class="odometer" data-count="830"></span>+</h3>
+                  <p>Sells</p>
+                </div>
+                <div class="ctav2__content--counter--single">
+                  <h3><span class="odometer" data-count="100"></span>%</h3>
+                  <p>Satisfy Clients</p>
+                </div>
+              </div>
+              <a
+                class="btn__primary"
+                target="_blank"
+                href="https://codecanyon.net/user/themeatelier"
+                ><span>Check Our Items</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== CTA section end ========== -->
+
+    <!-- ========== Footer section start ========== -->
+    <section class="footer2 footer">
+      <div class="container">
+        <div class="footer-padding">
+          <div class="footer__middle">
+            <div class="row justify-content-center gx-xl-5">
+              <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <h4 class="mb-4">Email Now:</h4>
+                <a rel="noreferrer" href="mailto:themeatelierbd@gmail.com"
+                  >themeatelierbd@gmail.com</a
+                >
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <h4 class="mb-4">Follow us:</h4>
+                <ul class="footer__social-icon">
+                  <li>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UCwfX_Z6_DeNtVt1Bs3qLJwQ"
+                      ><i class="icofont-youtube-play"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://twitter.com/ThemeAtelier"
+                      ><i class="icofont-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.instagram.com/themeatelier/"
+                      ><i class="icofont-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href="https://www.facebook.com/FixoLab/"
+                      ><i class="icofont-facebook"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="p-0 m-0" />
+        <div class="row">
+          <div
+            class="footer__bottom justify-content-center d-md-flex align-items-center text-center"
+          >
+            <p>
+              © 2022 All right reserved. Made with<i class="icofont-heart"></i>
+              by <a href="/">ThemeAtelier</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Example1 -->
+    <div class="ctm" id="example_1">
+      <button
+        class="ctm-bubble circle-bubble circle-animation-2 example_button"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div
+        class="example_popup ctm__popup animation13 chat-availability"
+        data-timezone=""
+        data-availability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+      >
+        <div class="ctm__popup--header header-center">
+          <div class="image">
+            <img src="assets/image/user.webp" alt="user" />
+          </div>
+          <div class="info">
+            <h4 class="info__name">John Doe</h4>
+            <p class="info__title">Typically replies within a day</p>
+          </div>
+        </div>
+        <div class="ctm__popup--content">
+          <div class="user-text">
+            <input id="subject" type="text" placeholder="Subject" />
+            <textarea
+              id="message"
+              rows="5"
+              type="text"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="ctm__send-message" target="_blank">
+            <i class="fa-regular fa-envelope"></i>Send Mail
+            <a
+              class="mailtoui withinputmail"
+              href="mailto:test@test.com,user2@example.com?subject=subjectText&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=bodyText"
+            ></a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- example 2 -->
+    <div class="ctm" id="example_2">
+      <button
+        class="ctm-bubble example_button circle-bubble circle-animation-2"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div
+        class="example_popup ctm__popup animation14 chat-availability"
+        data-availability='{ "sunday":"00:00-00:01", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+      >
+        <div class="ctm__popup--header">
+          <div class="image">
+            <img src="demo-assets/images/user.webp" alt="user" />
+          </div>
+          <div class="info">
+            <h4 class="info__name">John Doe</h4>
+            <p class="info__title">Call now to get instant response</p>
+          </div>
+        </div>
+        <div class="ctm__popup--content">
+          <div class="current-time"></div>
+          <div class="sms">
+            <div class="sms__user">
+              <img src="demo-assets/images/user.webp" alt="user" />
+            </div>
+            <div class="sms__text">
+              <p>
+                Hello, Welcome to the site. Looking for the best offer? Call me
+                I’ll by clicking below button I will be happy to find your
+                perfect option.
+              </p>
+            </div>
+          </div>
+          <button class="ctm__send-message" target="_blank">
+            <i class="fa-regular fa-envelope"></i>Send Mail
+            <a
+              class="mailtoui"
+              href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+            ></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- example 3 -->
+    <!-- ========== MULTI USER POPUP List ========== -->
+    <div class="ctm-multi" id="example_3">
+      <button
+        class="example_button ctm-bubble circle-bubble circle-animation-3"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div class="example_popup ctm-multi__popup animation3">
+        <div class="ctm-multi__popup--header">
+          <h3 class="title">Need Help? Chat with us</h3>
+          <p class="subtitle">Click one of our representatives below</p>
+        </div>
+        <div
+          class="ctm-multi__popup--content"
+          data-search="true"
+          id="multi-user"
+        >
+          <div class="search">
+            <input
+              id="search-input"
+              onkeyup="searchUser()"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="users">
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/user.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client1.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client2.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client3.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone="America/Los_Angeles"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client4.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- example 4 -->
+    <!-- ========== MULTI USER POPUP Grid ========== -->
+    <div class="ctm-multi ctm-grid" id="example_4">
+      <button
+        class="example_button ctm-bubble circle-bubble circle-animation-4"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div class="example_popup ctm-multi__popup animation3">
+        <div class="ctm-multi__popup--header">
+          <h3 class="title">Need Help? Chat with us</h3>
+          <p class="subtitle">Click one of our representatives below</p>
+        </div>
+        <div class="ctm-multi__popup--content" data-search="" id="multi-user">
+          <div class="search">
+            <input
+              id="search-input"
+              onkeyup="searchUser()"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="users">
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client2.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/user.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client1.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client4.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Example 5  -->
+    <div class="ctm" id="example_5">
+      <button
+        class="ctm-bubble example_button circle-bubble circle-animation-1"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div
+        class="example_popup ctm__popup animation14 avatar-inactive chat-availability"
+        data-availability="{  }"
+      >
+        <div class="ctm__popup--header header-center">
+          <div class="image">
+            <img src="demo-assets/images/user.webp" alt="user" />
+          </div>
+          <div class="info">
+            <h4 class="info__name">John Doe</h4>
+            <p class="info__title">Call now to get instant response</p>
+          </div>
+        </div>
+        <div class="ctm__popup--content">
+          <div class="current-time"></div>
+          <div class="sms">
+            <div class="sms__user">
+              <img src="demo-assets/images/user.webp" alt="user" />
+            </div>
+            <div class="sms__text">
+              <p>
+                Hello, Welcome to the site. Looking for the best offer? Call me
+                I’ll by clicking below button I will be happy to find your
+                perfect option.
+              </p>
+            </div>
+          </div>
+          <button class="ctm__send-message" target="_blank">
+            <i class="fa-regular fa-envelope"></i>Send mail
+            <a
+              class="mailtoui"
+              href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+            ></a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Example 6 -->
+    <div class="ctm-multi ctm-left" id="example_6">
+      <button
+        class="example_button ctm-bubble circle-bubble circle-animation-1"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div class="example_popup ctm-multi__popup animation3">
+        <div class="ctm-multi__popup--header">
+          <h3 class="title">Need Help? Chat with us</h3>
+          <p class="subtitle">Click one of our representatives below</p>
+        </div>
+        <div
+          class="ctm-multi__popup--content"
+          data-search="true"
+          id="multi-user"
+        >
+          <div class="search">
+            <input
+              id="search-input"
+              onkeyup="searchUser()"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="users">
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/user.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client2.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client1.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Example 7 Dark layout -->
+    <div class="night-mode ctm-multi" id="example_7">
+      <button
+        class="example_button ctm-bubble circle-bubble circle-animation-3"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div class="example_popup ctm-multi__popup animation3">
+        <div class="ctm-multi__popup--header">
+          <h3 class="title">Need Help? Chat with us</h3>
+          <p class="subtitle">Click one of our representatives below</p>
+        </div>
+        <div
+          class="ctm-multi__popup--content"
+          data-search="true"
+          id="multi-user"
+        >
+          <div class="search">
+            <input
+              id="search-input"
+              onkeyup="searchUser()"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="users">
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/user.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client2.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client1.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Example 8 -->
+    <!-- <div class="dark-mode ctm-multi" id="example_8">
+      <button
+        class="example_button ctm-bubble circle-bubble circle-animation-3"
+      >
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div class="example_popup ctm-multi__popup animation3">
+        <div class="ctm-multi__popup--header">
+          <h3 class="title">Need Help? Chat with us</h3>
+          <p class="subtitle">Click one of our representatives below</p>
+        </div>
+        <div
+          class="ctm-multi__popup--content"
+          data-search="true"
+          id="multi-user"
+        >
+          <div class="search">
+            <input
+              id="search-input"
+              onkeyup="searchUser()"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <div class="users">
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/user.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-useravailability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client2.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">Mia Smith</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+            <div
+              class="user useravailability"
+              data-timezone=""
+              data-useravailability='{ "sunday":"00:00-5:59", "monday":"00:00-5:59", "tuesday":"00:00-5:59", "wednesday":"01:00-5:59", "thursday":"00:00-5:59", "friday":"00:01-5:59", "saturday":"00:00-5:59" }'
+            >
+              <div class="user__image">
+                <img src="demo-assets/images/client1.webp" alt="user" />
+              </div>
+              <div class="user__info">
+                <h5 class="user__info--name">James Brown</h5>
+                <p class="user__info--title">Sales Support</p>
+                <p class="user__info--online">I'm available</p>
+                <p class="user__info--offline">I'm not available</p>
+              </div>
+              <a
+                class="mailtoui"
+                href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="ctm dark-mode" id="example_8">
+      <button class="example_button ctm-bubble circle-bubble circle-animation-4">
+        <span class="open-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </span>
+        <span class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </button>
+      <div
+        class="example_popup ctm__popup animation13 chat-availability"
+        data-timezone=""
+        data-availability='{ "sunday":"00:00-23:59", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+      >
+        <div class="ctm__popup--header header-center">
+          <div class="image">
+            <img src="assets/image/user.webp" alt="user" />
+          </div>
+          <div class="info">
+            <h4 class="info__name">John Doe</h4>
+            <p class="info__title">Typically replies within a day</p>
+          </div>
+        </div>
+        <div class="ctm__popup--content">
+          <div class="current-time"></div>
+          <div class="sms">
+            <div class="sms__user">
+              <img src="assets/image/user.webp" alt="user" />
+            </div>
+            <div class="sms__text">
+              <p>
+                Hello, Welcome to the site. Please check below button for
+                sending me an email.
+              </p>
+            </div>
+          </div>
+          <button class="ctm__send-message">
+            <i class="fa-regular fa-envelope"></i>Send Mail
+            <a class="mailtoui" href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."></a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Example 9 -->
+    <div class="ctm" id="example_9">
+      <button class="ctm-bubble bubble ctm-btn-bg example_button">
+        <div class="bubble__icon bubble-animation4">
+          <span class="bubble__icon--open">
+            <i class="fa-regular fa-envelope"></i>
+          </span>
+          <span class="bubble__icon--close">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        How can I help?
+      </button>
+      <div
+        class="example_popup ctm__popup animation14 chat-availability"
+        data-availability='{ "sunday":"00:00-00:01", "monday":"00:00-23:59", "tuesday":"00:00-23:59", "wednesday":"01:00-23:59", "thursday":"00:00-23:59", "friday":"00:01-23:59", "saturday":"00:00-23:59" }'
+      >
+        <div class="ctm__popup--header header-center">
+          <div class="image">
+            <img src="demo-assets/images/user.webp" alt="user" />
+          </div>
+          <div class="info">
+            <h4 class="info__name">John Doe</h4>
+            <p class="info__title">Call now to get instant response</p>
+          </div>
+        </div>
+        <div class="ctm__popup--content">
+          <div class="current-time"></div>
+          <div class="sms">
+            <div class="sms__user">
+              <img src="demo-assets/images/user.webp" alt="user" />
+            </div>
+            <div class="sms__text">
+              <p>
+                Hello, Welcome to the site. Looking for the best offer? Call me
+                I’ll by clicking below button I will be happy to find your
+                perfect option.
+              </p>
+            </div>
+          </div>
+          <button class="ctm__send-message" target="_blank">
+            <i class="fa-regular fa-envelope"></i>Send Mail
+            <a
+              class="mailtoui"
+              href="mailto:test@test.com,user2@example.com?subject=Winter%20is%20coming&cc=user3@example.com,user4@example.com&bcc=user1@example.com&body=Fear%20cuts%20deeper%20than%20swords."
+            ></a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Footer section end ========== -->
+    <!--====== jquery js ======-->
+    <script src="demo-assets/js/jquery.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="demo-assets/js/bootstrap.bundle.min.js"></script>
+    <!--====== One page nav ======-->
+    <script src="demo-assets/js/onepageNav.js"></script>
+    <!--====== Appear js ======-->
+    <script src="demo-assets/js/jquery.appear.min.js"></script>
+    <!--====== Odometer js ======-->
+    <script src="demo-assets/js/odometer.min.js"></script>
+    <!--====== GLightbox nav ======-->
+    <script src="demo-assets/js/glightbox.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="demo-assets/js/swiper.min.js"></script>
+    <!--====== Select toggle button js ======-->
+    <script src="demo-assets/js/select-togglebutton.js"></script>
+    <!--====== Moment js ======-->
+    <script src="assets/js/moment.min.js"></script>
+    <!--====== Moment js Timezone======-->
+    <script src="assets/js/moment-timezone-with-data.min.js"></script>
+    <!--====== Mailtoui js ======-->
+    <script src="assets/js/mailtoui-min.js"></script>
+    <!--====== ctm js ======-->
+    <script src="assets/js/ctm-main.js"></script>
+    <!--====== Custom js ======-->
+    <script src="demo-assets/js/custom.js"></script>
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("usage_examples");
+      var btns = header.getElementsByClassName("usage_example");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("selected");
+          current[0].className = current[0].className.replace(" selected", "");
+          this.className += " selected";
+        });
+      }
+    </script>
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+  </body>
+</html>
